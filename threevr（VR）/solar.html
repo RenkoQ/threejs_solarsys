@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VR demo</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <!--for baidu 识别移动端页面并禁止百度转码-->
+    <meta name="applicable-device" content="mobile">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!--viewport 设置，如果页面实际情况不允许缩放请加上,user-scalable=no-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>Solar</title>
+    <style>
+        body{
+            /*width: 100%;
+            height: 100%;*/
+            /*margin: 0px;*/
+            overflow: hidden;   /*隐藏内部溢出元素,清除浮动*/
+            position:absolute;
+            width:0;
+            height:0;
+        }
+        /*#tips{
+            position: absolute;
+            left: 42%;
+            top: 5%;
+
+            font-size: 16px;
+            color:#fff;
+        }*/
+        canvas{
+            background-image: url(img/bg.jpg);
+        }
+        * {cursor: none;}
+
+    </style>
+
+</head>
+<body onload="init()">
+    <canvas id="main" ></canvas>
+    <!--<div id="tips">使用 W A S D 方向键和鼠标移动</div>-->
+
+    <script type="text/javascript" src="js/three.js"></script>
+    <script type="text/javascript" src="js/firstPersonControl.js"></script>
+    <script type="text/javascript" src="js/stat.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/StereoEffect.js"></script>
+    <script type="text/javascript" src="js/OrbitControls.js"></script>
+
+
+</body>
+</html>
